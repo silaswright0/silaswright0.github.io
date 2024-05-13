@@ -1,0 +1,45 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header__title {
+    margin: 0;
+    font-size: 36px;
+}
+
+.header__description {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Navigation styles */
+.navigation {
+    background-color: #2196f3;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navigation__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20p;
+    margin: 0 20px;
+}
