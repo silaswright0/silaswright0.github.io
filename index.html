@@ -1,113 +1,61 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-
-<!--Hello, this is the HTML code for Silas' portfolio coded by me: Silas Wright, Page:index-->
-<html>
-    <head>
-        <title>Silas' Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <style>
-            .nav{
-                display: flex;
-                background-color: black;
-            }
-            
-            .nav a{
-                color: white;
-                padding: 14px 20px;
-                text-decoration: none;
-                text-align: center;
-            }
-            
-            .nav a:hover{
-                background-color: gray;
-                color: black;
-            }
-            .main_page{
-                display: flex;
-            }
-            
-            .main_left{
-                flex: 40%;
-                background-color: lightblue;
-                padding: 20px;
-            }
-            
-            .main_right{
-                flex: 60%;
-                background-color: lightsteelblue;
-                padding: 20px;
-            }
-            .p_text{
-                font-family: serif;
-                text-align: center;
-                font-size: 150%;
-            }
-            .h_text{
-                font-family: serif;
-                text-align: center;
-                font-size: 300%;
-            }
-            .center_image{
-                display: block;
-                margin-left: auto;
-                margin-right: auto; 
-            }
-            .nav_title{
-                color: white;
-                margin-left: 30px;
-                margin-right: 900px;
-                margin-top: 16px;
-                margin-bottom: 26px;
-                font-family: serif;
-                font-weight: normal;
-            }
-            
-            .bar{
-                height: 2px;
-                border-width: 0;
-                color: lightblue;
-                background-color: lightblue;
-            }
-        </style>
-    
-    </head>
-    <body style="background-color: lightsteelblue">
-        <div class="nav">
-            <h4 class="nav_title" >Silas' Portfolio</h4>
-            <a href ="index.html">Home</a>
-            <a href ="featured.html">Featured</a>
-            <a href ="projects.html">Projects</a>
-            <a href ="resume.html">Resume</a>
-            <a href ="contact.html">Contact</a>
-            <a href = "ai.html">AI</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silas Wright - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Silas Wright's Portfolio showcasing projects, resume, and contact information.">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <h1 class="header__title">Welcome to Silas Wright's Portfolio</h1>
         </div>
-        
-        <div class="main_page">
-            <div class="main_left">
-                <img class="center_image" src="silaswebprofile.jpg" alt="Picture of me" style="width:338px;height:412px;">
-            </div>   
-            <div class="main_right">
-                <h1 class="h_text">Who Am I?</h1>
-                <p class="p_text">My name is Silas Wright. I am a 18 year old student in my second year of an honors co-op computer science undergraduate degree at the University of Guelph. </p>
-                <hr class="bar">
-                <p class="p_text">I am responsible and hardworking and enjoy challenging myself while developing new skills. Additionally, my intelligence and problem solving capabilities have resulted in success in software development.</p>
-                <hr class="bar">
-                <p class = "p_text">I have 4 years of coding experience from both school and personal projects. In that time I have learned Python, Java, C/C++, HTML, CSS, Javascript, SQL, and Assembly. I thoroughly enjoy coding and continue to expand my skills all the time. Take a look at some of my projects <a href="projects.html">here</a>.</p>
-                <hr class="bar">
+    </header>
+    <nav class="navigation" role="navigation" aria-label="Main Navigation">
+        <div class="container">
+            <a href="index.html" class="navigation__link">Home</a>
+            <a href="featured.html" class="navigation__link">Featured</a>
+            <a href="projects.html" class="navigation__link">Projects</a>
+            <a href="resume.html" class="navigation__link">Resume</a>
+            <a href="contact.html" class="navigation__link">Contact</a>
+        </div>
+    </nav>
+    <main class="main-content">
+        <section class="section about-section">
+            <div class="container" style="display: flex;">
+                <div style="flex: 1; line-height: 1.8;">
+                    <h1 class="section__title">About Me</h1>
+                    <p class="section__content">I am a 19 year old student in my third year of an honors co-op computer science undergraduate degree at the University of Guelph.</p>
+                    <p class="section__content">I am a passionate software developer who is responsible and hardworking. I enjoy challenging myself while developing new skills.</p>
+                    <p class="section__content">I have 4 years of coding experience from both school and personal projects. In that time I have learned Python, Java, C/C++, HTML, CSS, Javascript, SQL, and Assembly. I thoroughly enjoy coding and continue to expand my skills all the time. Take a look at some of my projects <a href="projects.html">here</a>.</p>
+                </div>
+                <div style="flex: 1; display: flex; justify-content: flex-end;">
+                    <img src="silaswebprofile.jpg" alt="Photo of Silas Wright" class="section__image">
+                </div>
             </div>
-            
+        </section>
+        <!-- just for now
+        <section class="section projects-section">
+            <div class="container">
+                <h1 class="section__title">Featured Projects</h1>
+                <div class="project">
+                    <h2 class="project__title">Mancala Game</h2>
+                    <p class="project__description">A Java program that provides a GUI for playing the popular board game Mancala. Features include saving/loading game states and user profiles.</p>
+                </div>
+                <div class="project">
+                    <h2 class="project__title">Personal Website</h2>
+                    <p class="project__description">A showcase of front-end development skills using HTML, CSS, and JavaScript. Demonstrates creativity and problem-solving abilities.</p>
+                </div>
+            </div>
+        </section>-->
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p class="footer__copyright">&copy; 2024 Silas Wright. All rights reserved.</p>
         </div>
-        <div class="main_right">
-            <!-- not sure if i want to add this 
-            <p class = "p_text">For any curious about my education on a course level. I have completed two full time terms of my degree, and as such have already taken courses such as CIS*1300 and CIS*2500 providing me with a solid understanding of C programming. I have also already completed discrete structures *1910 and *2910 which taught me important computer science theory. Furthermore, the high school courses ..,.., and .. provided an impressive teaching of java and python. In my future academic career, I plan to take fundamental courses such as CIS *2430, *2520, *2750, and *3670 which will build upon my general foundation of software programming. I also plan to take courses to perfect user interfaces (CIS*2170), learn cyber security (CIS*4510), study AI (CIS*3700), perfect game programming (CIS*4820), learn applications in data management (STAT*2040, CIS*3750, CIS*3120, CIS*3490), learn how to program hardware (CIS*2030), and many more. In addition, I am minoring in biology and am interested in applications of my degree in biotechnology. Lastly, I taught myself C++ and HTML <i>(which I used to code this website)</i>, and am planning to learn javascript next.</p>
-            <hr class ="bar">
-            -->
-        </div>
-    </body>
+    </footer>
+</body>
 </html>

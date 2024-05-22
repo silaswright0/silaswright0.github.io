@@ -1,465 +1,266 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
-<!--Hello, this is the HTML code for Silas' portfolio coded by me: Silas Wright, Page:projects-->
-<html>
-    <head>
-        <title>Silas' Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a href="projects.html"></a>
-        <style>
-            .nav{
-                display: flex;
-                background-color: black;
-            }
-            
-            .nav a{
-                color: white;
-                padding: 14px 20px;
-                text-decoration: none;
-                text-align: center;
-            }
-            
-            .nav a:hover{
-                background-color: gray;
-                color: black;
-            }
-            .main_page{
-                display: flex;
-            }
-            
-            .main_left{
-                flex: 50%;
-                background-color: lightblue;
-                padding: 20px;
-            }
-            
-            .main_right{
-                flex: 50%;
-                background-color: lightsteelblue;
-                padding: 20px;
-            }
-            .p_text{
-                font-family: serif;
-                text-align: center;
-                font-size: 125%;
-            }
-            .h1_text{
-                font-family: serif;
-                text-align: center;
-                font-size: 300%;
-            }
-            .h2_text{
-                font-family: serif;
-                text-align: center;
-                font-size: 150%;
-            }
-            .center_image{
-                display: block;
-                margin-left: auto;
-                margin-right: auto; 
-            }
-            .nav_title{
-                color: white;
-                margin-left: 30px;
-                margin-right: 900px;
-                margin-top: 16px;
-                margin-bottom: 26px;
-                font-family: serif;
-                font-weight: normal;
-            }
-            
-            /*css for slideshow*/
-            
-            * {box-sizing:border-box}
-            /* slideshow container*/
-            .slideshow-container {
-                max-width: 1000px;
-                position: relative;
-                margin: auto;
-            }
-            
-            /*begins by hiding images*/
-            .mySlides {
-                display: none;
-            }
-            
-            /*next and previous buttons*/
-            .prev, .next {
-                cursor: pointer;
-                position: absolute;
-                top: 50%;
-                width: auto;
-                margin-top: -22px;
-                padding: 16px;
-                color: white;
-                font-weight: bold;
-                font-size: 18px;
-                transition: 0.6s ease;
-                border-radius: 0 3px 3px 0;
-            }
-            
-            /*position the 'next' button on the right*/
-            .next{
-                right: 0;
-                border-radius: 3px 0 0 3px;
-            }
-            
-            /*add transparancy on hover*/
-            .prev:hover, .next:hover {
-                background-color: rgba(0,0,0,0.8);
-            }
-            
-            /*style caption text*/
-            .text {
-                color: #0d0000;
-                font-size: 15px;
-                padding: 8px 12px;
-                position: absolute;
-                bottom: 8px;
-                width: 100%;
-                text-align: center;
-            }
-            
-            /*Number text (1-3)*/
-            .numbertext {
-                color: #f2f2f2;
-                font-size: 12px;
-                padding:8px 12px;
-                position: absolute;
-                top: 0;
-            }
-            
-            /*fading animation*/
-            .fade{
-                animation-name: fade;
-                animation-duration: 1.5s;
-            }
-            
-            @keyframes fade {
-                from {opacity: .4}
-                to {opacity: 1}
-            }
-        </style>
-    
-    </head>
-    <body style="background-color: lightblue">
-        <div class="nav">
-            <h4 class="nav_title" >Silas' Portfolio</h4>
-            <a href ="index.html">Home</a>
-            <a href ="featured.html">Featured</a>
-            <a href ="projects.html">Projects</a>
-            <a href ="resume.html">Resume</a>
-            <a href ="contact.html">Contact</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silas Wright - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Silas Wright's Portfolio showcasing projects, resume, and contact information.">
+    <style>
+        .project-columns {
+            display: flex;
+            gap: 20px;
+        }
+        .project-column {
+            flex: 1;
+        }
+        .project {
+            display: flex;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightsteelblue;
+        }
+        .project__image {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .project__content {
+            flex: 1;
+        }
+        .slideshow-container {
+            max-width: 150px;
+            position: relative;
+        }
+        .mySlides {
+            display: none;
+        }
+        .mySlides img{
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .mySlidesPool{
+            display: none;
+        }
+        .mySlidesPool img{
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .text {
+            color: #0d0000;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <h1 class="header__title">Silas Wright's Portfolio</h1>
         </div>
-        
-        <div class="main_page">
-            <div class="main_left" style="border: 1px solid black">
-                <h1 class="h1_text">School Projects</h1>
-            </div>   
-            <div class="main_right" style="border: 1px solid black">
-                <h1 class="h1_text">Personal Projects</h1>
-            </div>
+    </header>
+    <nav class="navigation" role="navigation" aria-label="Main Navigation">
+        <div class="container">
+            <a href="index.html" class="navigation__link">Home</a>
+            <a href="featured.html" class="navigation__link">Featured</a>
+            <a href="projects.html" class="navigation__link">Projects</a>
+            <a href="resume.html" class="navigation__link">Resume</a>
+            <a href="contact.html" class="navigation__link">Contact</a>
         </div>
-
-        <!--Below is project 1 nd 2-->
-        <!--<div class="main_page">
-            <div class="main_left" style="border: 1px solid black">
-                <h3 class="h2_text">Pool Game</h3> 
-                <div class="main_page">
-                    <div class="main_left">
-                         below is HTML for slideshow
+    </nav>
+    <main class="main-content">
+        <div class="container project-columns">
+            <section class="project-column">
+                <h2 class="section__title">School Projects</h2>
+                <article class="project">
+                    <div class="project__content">
+                        <h3 class="project__title">Pool Game</h3>
+                        <p class="project__description">I independently developed a pool game to gain full-stack development experience. I created a server program with Python that acts as an asynchronous interface between C and Python backend and my Pool Game website which I created with HTML, CSS, and Javascript.  See the source code in <a href = "https://github.com/silaswright0/Pool-Game">GitHub here</a>. Explore the game further on the <a href="featured.html">featured page</a>.</p>
                         <div class="slideshow-container">
-                            <div class="mySlides fade">
+                            <div class="mySlidesPool">
                                 <div class="numbertext">1 / 3</div>
-                                <img class="center_image" src="poolpic1.png" alt="Picture of pool table" style="width:312px;height:312px;">
-                                <div class="text">Picture of pool table</div>
+                                <img src="poolpic1.png" alt="Pool Pic 1" class="project__image">
                             </div>
-                            
-                            <div class="mySlides fade">
+                            <div class="mySlidesPool">
                                 <div class="numbertext">2 / 3</div>
-                                <img class="center_image" src="poolpic2.png" alt="Picture of pool table" style="width:312px;height:312px;">
-                                <div class="text">Picture of pool table</div>
+                                <img src="poolpic2.png" alt="Pool Pic 2" class="project__image">
                             </div>
-                            
-                            <div class="mySlides fade">
+                            <div class="mySlidesPool">
                                 <div class="numbertext">3 / 3</div>
-                                <img class="center_image" src="poolpic3.png" alt="Picture of pool table" style="width:312px;height:312px;">
-                                <div class="text">Picture of pool table</div>
+                                <img src="poolpic3.png" alt="Pool Pic 3" class="project__image">
                             </div>
-                            
-                             buttons below
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            
+                            <a class="prev" onclick="poolPlusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="poolPlusSlides(1)">&#10095;</a>
                         </div>
                     </div>
-                    <div class="main_left">
-                        <p class="p_text">I independently developed a pool game to gain full-stack development experience. I created a server program with Python that acts as an asynchronous interface between C and Python backend and my Pool Game website which I created with HTML, CSS, and Javascript.  See the source code in <a href = "https://github.com/silaswright0/Pool-Game">GitHub here</a>. Explore the game further on the <a href="featured.html">featured page</a>.</p>
-                        
+                </article>
+                <article class="project">
+                    <img src="2430.png" alt="Screenshot of GUI" class="project__image">
+                    <div class="project__content">
+                        <h3 class="project__title">Mancala Game</h3>
+                        <p class="project__description">This Java program supplies a GUI and class hierarchy with the ability to play the popular board game Mancala with different rule sets. The code also provides the user with the ability to save and load game states, as well as access information about a user's personal profile. I used JUnit testing and PMD error checking to ensure professional code quality. This assignment was for my CIS*2430 class which teaches Java and Object Oriented Programming.</p>
                     </div>
-                </div>
-            </div>   
-            <div class="main_right" style="border: 1px solid black">
-                <h3 class="h2_text">Evil Game</h3>
-                
-                <div class="main_page">
-                    <div class="main_right">
-                        <img class="center_image" src="placeholder-person-square.png" alt="Photo will be added soon" style="width:216px;height:216px;">
+                </article>
+                <article class="project">
+                    <img src="2520.png" alt="Screenshot of part of program for hash table" class="project__image">
+                    <div class="project__content">
+                        <h3 class="project__title">Data Structures Implementations</h3>
+                        <p class="project__description">For my CIS*2520 course, I was responsible for providing abstract implementations of several data structures including linked lists, hash tables, and tries. Each implementation required methods for insertion, query, deletion, and as such detailed knowledge of the data structure. Each implementation was thoroughly tested with various sizes and styles of data highlighting the strengths and weaknesses of each data structure.</p>
                     </div>
-                    <div class="main_right">
-                        <p class="p_text">I created this game to be a relaxing exploration based computer game. The main draws are immersive visual and music elements as well as fun/silly gameplay senarios. I used Python with Visual Studio and Unreal Engine on Windows OS. I ..</p>
-                        
+                </article>
+                <article class="project">
+                    <img src="1300-Olympics.png" alt="Screenshot of part of program for hash table" class="project__image">
+                    <div class="project__content">
+                        <h3 class="project__title">Olympics tracker</h3>
+                        <p class="project__description">This project was my third assignment in my CIS*1300 course which introduces the C programming language and procedural programming. The project read data regarding the Olympic games from a file then provided various methods to access and format the data. For example the project could graph countries standings based on a medal or simply return the number of golds a country has. The project demonstrates a solid understanding of procedural programming and the C language.</p>
                     </div>
-                </div>
-            
-            </div>
-        </div>-->
-
-
-        <!-- Below is project 3 and 4 -->
-        <div class="main_page">
-            <div class="main_right" style="border: 1px solid black">
-                <h3 class="h2_text">Mancala Game</h3>
-                <!-- below is body of project 3 -->
-                <div class="main_page">
-                    <div class="main_right">
-                        <p class="p_text">This java program supplies a GUI and class hierarchy with the ability to play the popular board game Mancala with different rule sets. The code also provides the user with the ability to save and load game states, as well as access information about a users personal profile. I used JUnit testing and PMD error checking to ensure professional code quality. This assignment was for my CIS*2430 class which teaches Java and Object Oriented Programming. </p>
+                </article>
+                <article class="project">
+                    <img src="2500-StringMan.png" alt="Screenshot of part of program for hash table" class="project__image">
+                    <div class="project__content">
+                        <h3 class="project__title">String manipulator</h3>
+                        <p class="project__description">For this assignment I used C to develop a program that provides a user with various methods to manipulate strings read in from a data file. This assignment was part of my CIS*2500 course which advanced my knowledge of the C language and procedural programming.</p>
                     </div>
-                    <div class="main_right">
-                        <img class="center_image" src="2430.png" alt="Screenshot of GUI" style="width:312px;height:312px;">
-                        
-                        
+                </article>
+                <article class="project">
+                    <img src="2500-Emp.png" alt="Screenshot of part of program for hash table" class="project__image">
+                    <div class="project__content">
+                        <h3 class="project__title">Employee management</h3>
+                        <p class="project__description">This program was my third assignment in my CIS*2500 course. The code provides a user with a multitude of functions to assist with various tasks related to employee management.</p>
                     </div>
-                </div>
-            </div>
-
-            <div class="main_left" style="border: 1px solid black">
-                <h3 class="h2_text">Pokemon Game</h3>
-                <!-- below is body of project 4 -->
-                <div class="main_page">
-                    <div class="main_left">
-                        <p class="p_text">This Java program is designed to simulate a DS style Pokemon game. I collaborated with two friends to develop this program using Waterfall methodology. I was primarily responsible for the abstract Pokemon class and its subclasses as well as the GUI. During this projects development I used problem solving skills to use OO concepts I had no previous experience with such as Java's Action Listener class. See the source code in <a href = "https://github.com/silaswright0/myPokemonProject">GitHub here</a>. Download the game <a href="PokemonGame.zip" download="PokemonGame.zip">here!</a></p>
-                    </div>
-                    <div class="main_left">
-                        <!-- below is HTML for slideshow -->
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <div class="numbertext">1 / 3</div>
-                                <img class="center_image" src="pokemonmenupic.png" alt="Screenshot of GUI menu" style="width:312px;height:312px;">
-                                <div class="text">Screenshot of GUI menu</div>
+                </article>
+            </section>
+            <section class="project-column">
+                <h2 class="section__title">Personal Projects</h2>
+                <article class="project">
+                    <div class="project__content">
+                        <h3 class="project__title">Pokemon Game</h3>
+                        <p class="project__description">This Java program is designed to simulate a DS style Pokemon game. I collaborated with two friends to develop this program using Waterfall methodology. I was primarily responsible for the abstract Pokemon class and its subclasses as well as the GUI. During this project, I used problem-solving skills to utilize OO concepts I had no previous experience with such as Java's Action Listener class. See the source code in <a href="https://github.com/silaswright0/myPokemonProject">GitHub here</a>. Download the game <a href="PokemonGame.zip" download="PokemonGame.zip">here!</a></p>
+                            <div class="slideshow-container">
+                                <div class="mySlides">
+                                    <div class="numbertext">1 / 3</div>
+                                    <img class="center_image" src="pokemonmenupic.png" alt="Screenshot of GUI menu" style="width:312px;height:312px;">
+                                    <div class="text">Screenshot of GUI menu</div>
+                                </div>
+                                
+                                <div class="mySlides">
+                                    <div class="numbertext">2 / 3</div>
+                                    <img class="center_image" src="pokemongamepic.png" alt="Screenshot of GUI game enviroment" style="width:312px;height:312px;">
+                                    <div class="text">Screenshot of GUI game enviroment</div>
+                                </div>
+                                
+                                <div class="mySlides">
+                                    <div class="numbertext">3 / 3</div>
+                                    <img class="center_image" src="pokemonbattlepic.png" alt="Screenshot of GUI battle enviroment" style="width:312px;height:312px;">
+                                    <div class="text">Screenshot of GUI battle enviroment</div>
+                                </div>
+                                
+                                <!-- buttons below -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                
                             </div>
-                            
-                            <div class="mySlides fade">
-                                <div class="numbertext">2 / 3</div>
-                                <img class="center_image" src="pokemongamepic.png" alt="Screenshot of GUI game enviroment" style="width:312px;height:312px;">
-                                <div class="text">Screenshot of GUI game enviroment</div>
-                            </div>
-                            
-                            <div class="mySlides fade">
-                                <div class="numbertext">3 / 3</div>
-                                <img class="center_image" src="pokemonbattlepic.png" alt="Screenshot of GUI battle enviroment" style="width:312px;height:312px;">
-                                <div class="text">Screenshot of GUI battle enviroment</div>
-                            </div>
-                            
-                            <!-- buttons below -->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            
-                        </div>
                     </div>
-                    
-                </div>
-            </div>   
-            
+                </article>
+                <article class="project">
+                    <div class="project__content">
+                        <h3 class="project__title">Unreal Engine App</h3>
+                        <p class="project__description">I am currently employed as a software developer constructing an app for a client using Unreal Engine. I worked with my client to carefully design a modular project structure using agile methodology to allow for seamless integration of new features. My client sets clear project requirements that I satisfy within specified time constraints. I maintained proactive communication with the client to deliver project components and actively engaged in discussions to identify and implement improvements. During the project, I have gained incredibly valuable experience with professional software development.</p>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project__content">
+                        <h3 class="project__title">Personal Website In HTML</h3>
+                        <p class="project__description">I designed this website to display my front end development abilities, as well as abilities in other powerful languages by showcasing some of my other projects. Moreover, teaching myself how to create this website is a demonstration of my hard working nature, initiative, and problem solving capabilities. The website uses HTML, CSS, and Javascript to create a visually appealing, interactive website. I also employed concepts I learned in my UI design class such as the principles of design and Gestalt principles. See the source code in <a href = "https://github.com/silaswright0/silaswright0.github.io">GitHub here</a></p>
+                    </div>
+                </article>
+                <article class="project">
+                    <img src="library.png" alt="Screenshot of GUI" class="project__image">
+                    <div class="project__content">
+                        <h3 class="project__title">Library Project</h3>
+                        <p class="project__description">This Java project represents a online library implementation. I worked independently to create a program which reads data from a file then uses an interactive UI to grant a user the ability to add and borrow books. In addition, the program provides different search methods so the user can choose the most optimal one for their specific search. See the source code in <a href ="https://github.com/silaswright0/Library-Project">GitHub here</a></p>
+                    </div>
+                </article>
+            </section>
         </div>
-        
-        <!-- Below is projects 5 and 6 -->
-        <div class="main_page">
-            <div class="main_left" style="border: 1px solid black">
-                <h3 class="h2_text">Data Structures Implementations</h3>
-                <!-- below is body of project 5 -->
-                <div class="main_page">
-                    <div class="main_left">
-                        <img class="center_image" src="2520.png" alt="Screenshot of part of program for hash table" style="width:312px;height:312px;">
-                    </div>
-                    <div class="main_left">
-                        <p class="p_text">For my CIS*2520 course, I was responsible for providing abstract implementations of several data structures including linked lists, hash tables, and tries. Each implementation required methods for insertion, query, deletion, and as such detailed knowledge of the data structure. Each implementation was thoroughly tested with various sizes and styles of data highlighting the strengths and weaknesses of each data structure.</p>
-                        
-                    </div>
-                </div>
-            </div>   
-            <div class="main_right" style="border: 1px solid black">
-                <h3 class="h2_text">Unreal engine app</h3>
-                <!-- below is body of project 6 -->
-                <div class="main_page">
-                    <!--<div class="main_right">
-                        <img class="center_image" src="placeholder-person-square.png" alt="Photo will be added soon" style="width:312px;height:312px;">
-                        
-                    </div>-->
-                    <div class="main_right">
-                        <p class="p_text">I am currently employed as a software developer constructing an app for a client using Unreal Engine. I worked with my client to carefully design a modular project structure using the agile methodology to allow for seamless integration of new features. My client sets clear project requirements that I satisfy within specified time constraints. I maintained proactive communication with client to deliver project components and actively engaged in discussions to identify and implement improvements. During the project I have gained incredibly valuable experience with professional software development.</p>
-                        
-                    </div>
-                </div>
-            </div>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p class="footer__copyright">&copy; 2024 Silas Wright. All rights reserved.</p>
         </div>
-        
-        <!-- Below is projects 7 and 8 -->
-        <div class="main_page">
-            <div class="main_right" style="border: 1px solid black">
-                <h3 class="h2_text">Olympics tracker</h3>
-                <!-- below is body of project 7 -->
-                <div class="main_page">
-                    <div class="main_right">
-                        <p class="p_text">This project was my third assignment in my CIS*1300 course which introduces the C programming language and procedural programming. The project read data regarding the Olympic games from a file then provided various methods to access and format the data. For example the project could graph countries standings based on a medal or simply return the number of golds a country has. The project demonstrates a solid understanding of procedural programming and the C language.</p>
-                    </div>
-                    <div class="main_right">
-                        <img class="center_image" src="1300-Olympics.png" alt="Screenshot of program menu" style="width:312px;height:312px;">
-                        
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="main_left" style="border: 1px solid black">
-                <h3 class="h2_text">Personal Website In HTML</h3>
-                <!-- below is body of project 8 -->
-                <div class="main_page">
-                    <div class="main_left">
-                        <p class="p_text">I designed this website to display my front end development abilities, as well as abilities in other powerful languages by showcasing some of my other projects. Moreover, teaching myself how to create this website is a demonstration of my hard working nature, initiative, and problem solving capabilities. The website uses HTML, CSS, and Javascript to create a visually appealing, interactive website. I also employed concepts I learned in my UI design class such as the principles of design and Gestalt principles. See the source code in <a href = "https://github.com/silaswright0/silaswright0.github.io">GitHub here</a></p>
-                    </div>
-                    <!--<div class="main_left">
-                        <img class="center_image" src="placeholder-person-square.png" alt="Photo will be added soon" style="width:312px;height:312px;">
-                        
-                    </div>-->
-                </div>
-            </div>   
-        </div>
-        
-        
-        <!-- Below is projects 9 and 10 -->
-        <div class="main_page">
-            <div class="main_left" style="border: 1px solid black">
-                <h3 class="h2_text">String manipulator</h3>
-                <!-- below is body of project 10 -->
-                <div class="main_page">
-                    <div class="main_left">
-                        <img class="center_image" src="2500-StringMan.png" alt="Screenshot of some of the output of program" style="width:312px;height:312px;">
-                    </div>
-                    <div class="main_left">
-                        <p class="p_text">For this assignment I used C to develop a program that provides a user with various methods to manipulate strings read in from a data file. This assignment was part of my CIS*2500 course which advanced my knowledge of the C language and procedural programming.</p>
-                        
-                    </div>
-                </div>
-            </div>   
-            <div class="main_right" style="border: 1px solid black">
-                <h3 class="h2_text">Library Project</h3>
-                <!-- below is body of project 9 -->
-                <div class="main_page">
-                    <div class="main_right">
-                        <img class="center_image" src="library.png" alt="Screenshot of program" style="width:312px;height:312px;">
-                    </div>
-                    <div class="main_right">
-                        <p class="p_text">This Java project represents a online library implementation. I worked independently to create a program which reads data from a file then uses an interactive UI to grant a user the ability to add and borrow books. In addition, the program provides different search methods so the user can choose the most optimal one for their specific search. See the source code in <a href ="https://github.com/silaswright0/Library-Project">GitHub here</a> </p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Below is projects 11 and 12 -->
-        <div class="main_page">
-            <div class="main_right" style="border: 1px solid black">
-                <h3 class="h2_text">Employee management</h3>
-                <!-- below is body of project 11 -->
-                <div class="main_page">
-                    <div class="main_right">
-                        <p class="p_text">This program was my third assignment in my CIS*2500 course. The code provides a user with a multitude of functions to assist with various tasks related to employee management.</p>
-                    </div>
-                    <div class="main_right">
-                        <img class="center_image" src="2500-Emp.png" alt="Screenshot of program" style="width:312px;height:312px;">
-                        
-                        
-                    </div>
-                </div>
-            </div>   
-            <div class="main_left" style="border: 1px solid black">
-                <h3 class="h2_text">Sorting Efficiencies Program</h3>
-                <!-- below is body of project 12 -->
-                <div class="main_page">
-                    <div class="main_left">
-                        <p class="p_text">I developed this program independently using Java with NetBeans IDE. The program consists of a GUI and several standard sorting algorithms. It is designed to illustrate when each algorithm is most optimal, as well as demonstrating my personal understanding of how the sorting algorithms work and when each is most applicable. See the source code in <a href="https://github.com/silaswright0/Sortingefficiencies">GitHub here</a></p>
-                    </div>
-                    <div class="main_left">
-                        <img class="center_image" src="sortingeff.png" alt="Screenshot of program" style="width:312px;height:312px;">
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        <!-- Below is projects 13 and 14 -->
-        <!--<div class="main_page">-->
-            <!--<div class="main_right" style="border: 1px solid black">
-                <h3 class="h2_text">Project in development</h3>
-                 below is body of project 13
-                <div class="main_page">
-                    <div class="main_right">
-                        <p class="p_text"> desc... uisdfhfisduiciudndiusncsuiidudhs hfuhoshduodufuanis  uisnauindoui fnanusd onuansufinvbus  sdoijcdsinvain visnaicnoifv9ds vsdnuinou rouheuiour ureaivfrsu vunseoerui vuisenru nusepnirv uvsepinrns uvspnrusu usrpeivrnu uvspienrui</p>
-                    </div>
-                    <div class="main_right">
-                        <img class="center_image" src="placeholder-person-square.png" alt="Photo will be added soon" style="width:216px;height:216px;">
-                        
-                        
-                    </div>
-                </div>
-            </div>   -->
-            <!--<div class="main_left" style="border: 1px solid black">-->
-            <!-- keep in comments for now 
-                <h3 class="h2_text">Coming soon..</h3>
-                
-                <div class="main_page">
-                    <div class="main_left">
-                        <p class="p_text"> desc... uisdfhfisduiciudndiusncsuiidudhs hfuhoshduodufuanis  uisnauindoui fnanusd onuansufinvbus  sdoijcdsinvain visnaicnoifv9ds vsdnuinou rouheuiour ureaivfrsu vunseoerui vuisenru nusepnirv uvsepinrns uvspnrusu usrpeivrnu uvspienrui</p>
-                    </div>
-                    <div class="main_left">
-                        <img class="center_image" src="placeholder-person-square.png" alt="Photo will be added soon" style="width:216px;height:216px;">
-                        
-                        
-                    </div>
-                </div>
-            -->
-            <!--</div>
-        </div>-->
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-            // next/previous controls
-            function plusSlides(n) {
-                showSlides(slideIndex +=n);
+    </footer>
+    <script>
+        let slideIndex = 1;
+        let poolSlideIndex =1;
+        showSlides(slideIndex);
+        poolShowSlides(poolSlideIndex);
+        // next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex +=n);
+        }
+        function poolPlusSlides(n) {
+            poolShowSlides(poolSlideIndex +=n);
+        }
+        //thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+            poolShowSlides(poolSlideIndex = n)
+        }
+        function poolShowSlides(n){
+            let i;
+            let slides = document.getElementsByClassName("mySlidesPool");
+            if (n > slides.length) {poolSlideIndex = 1;}
+            if (n < 1) {poolSlideIndex = slides.length;}
+            for (i=0;i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-            //thumbnail image controls
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
+            slides[poolSlideIndex-1].style.display = "block";
+        }
+        function showSlides(n){
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1;}
+            if (n < 1) {slideIndex = slides.length;}
+            for (i=0;i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-            
-            function showSlides(n){
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                if (n > slides.length) {slideIndex = 1;}
-                if (n < 1) {slideIndex = slides.length;}
-                for (i=0;i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slides[slideIndex-1].style.display = "block";
-            }
-            </script>
-    </body>
+            slides[slideIndex-1].style.display = "block";
+        }
+        </script>
+</body>
 </html>
-

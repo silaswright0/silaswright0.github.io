@@ -1,102 +1,47 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
-<!--Hello, this is the HTML code for Silas' portfolio coded by me: Silas Wright, Page:contact-->
-<html>
-    <head>
-        <title>Silas' Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <style>
-            .nav{
-                display: flex;
-                background-color: black;
-            }
-            
-            .nav a{
-                color: white;
-                padding: 14px 20px;
-                text-decoration: none;
-                text-align: center;
-            }
-            
-            .nav a:hover{
-                background-color: gray;
-                color: black;
-            }
-            .main_page{
-                display: flex;
-            }
-            
-            .main_left{
-                flex: 60%;
-                background-color: lightblue;
-                padding: 20px;
-            }
-            
-            .main_right{
-                flex: 40%;
-                background-color: lightsteelblue;
-                padding: 20px;
-            }
-            .p_text{
-                font-family: serif;
-                text-align: center;
-                font-size: 150%;
-            }
-            .h_text{
-                font-family: serif;
-                text-align: center;
-                font-size: 300%;
-            }
-            .center_image{
-                display: block;
-                margin-left: auto;
-                margin-right: auto; 
-            }
-            .nav_title{
-                color: white;
-                margin-left: 30px;
-                margin-right: 900px;
-                margin-top: 16px;
-                margin-bottom: 26px;
-                font-family: serif;
-                font-weight: normal;
-            }
-            
-            .bar2{
-                height: 2px;
-                border-width: 0;
-                color: lightblue;
-                background-color: lightblue;
-            }
-        </style>
-    
-    </head>
-    <body style="background-color: lightblue">
-        <div class="nav">
-            <h4 class="nav_title" >Silas' Portfolio</h4>
-            <a href ="index.html">Home</a>
-            <a href ="featured.html">Featured</a>
-            <a href ="projects.html">Projects</a>
-            <a href ="resume.html">Resume</a>
-            <a href ="contact.html">Contact</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silas Wright - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Contact information for Silas Wright. Get in touch via email, GitHub, or LinkedIn.">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <h1 class="header__title">Silas Wright's Portfolio</h1>
         </div>
-        
-        <div class="main_page">
-            <div class="main_left">
-                <h1 class="h_text">Contact Me</h1>
-                <p class="p_text">Email: siwright007@icloud.com</p>
-                <p class="p_text">GitHub: silaswright0</p>
-                <p class="p_text"> Linkedin: <a href ="https://www.linkedin.com/in/silas-wright-a4531b2a7">Silas_Wright</a></p>
-            </div>   
-            <div class="main_right">
-                <img class="center_image" src="silaswebprofile.jpg" alt="Picture of me" style="width:338px;height:412px;">
+    </header>
+    <nav class="navigation" role="navigation" aria-label="Main Navigation">
+        <div class="container">
+            <a href="index.html" class="navigation__link">Home</a>
+            <a href="featured.html" class="navigation__link">Featured</a>
+            <a href="projects.html" class="navigation__link">Projects</a>
+            <a href="resume.html" class="navigation__link">Resume</a>
+            <a href="contact.html" class="navigation__link">Contact</a>
+        </div>
+    </nav>
+    <main class="main-content">
+        <section class="section contact-section">
+            <div class="container" style="display: flex;">
+                <div style="flex: 1;">
+                    <h2 class="section__title">Contact Me</h2>
+                    <p class="section__content">Email: <a href="mailto:siwright007@icloud.com">siwright007@icloud.com</a></p>
+                    <p class="section__content">GitHub: <a href="https://github.com/silaswright0" target="_blank">silaswright0</a></p>
+                    <p class="section__content">LinkedIn: <a href="https://www.linkedin.com/in/silas-wright-a4531b2a7" target="_blank">Silas Wright</a></p>
+                </div>
+                <div style="flex: 1; display: flex; justify-content: flex-end;">
+                    <img src="silaswebprofile.jpg" alt="Photo of Silas Wright" class="section__image">
+                </div>
             </div>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p class="footer__copyright">&copy; 2024 Silas Wright. All rights reserved.</p>
         </div>
-    </body>
+    </footer>
+</body>
 </html>
-
