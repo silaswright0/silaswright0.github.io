@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silas Wright - Featured</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <h1 class="header__title">Silas Wright's Portfolio</h1>
+        </div>
+    </header>
+    <nav class="navigation" role="navigation" aria-label="Main Navigation">
+        <div class="container">
+            <a href="index.html" class="navigation__link">Home</a>
+            <a href="featured.html" class="navigation__link">Featured</a>
+            <a href="projects.html" class="navigation__link">Projects</a>
+            <a href="react.html" class="navigation__link">React</a>
+            <a href="resume.html" class="navigation__link">Resume</a>
+            <a href="contact.html" class="navigation__link">Contact</a>
+        </div>
+    </nav>
+    <main class="main-content">
+        <div id="reactID">
+            
+        </div>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p class="footer__copyright">&copy; 2024 Silas Wright. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    class reactComp extends React.Component{
+    render(){
+        return(
+            <div>
+                <h3>
+                    This is a React Component!
+                </h3>
+                <p>
+                    I am learning how to use React.
+                </p>
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(<reactComp />,document.getElementById('reactID'));
+</script>
+</html>
