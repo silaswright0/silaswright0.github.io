@@ -1,18 +1,14 @@
 //react.js
 
-class reactComp extends React.Component{
+class ReactComp extends React.Component{
     render(){
-        return(
-            <div>
-                <h3>
-                    This is a React Component!
-                </h3>
-                <p>
-                    I am learning how to use React.
-                </p>
-            </div>
+        return React.createElement(
+            "div",
+            null,
+            React.createElement("h3",null,"This is a React Component!"),
+            React.createElement("p",null,"I am learning how to use React.")
         );
     }
 }
 
-ReactDOM.createRoot(document.getElementById('reactID')).render(<reactComp />);
+ReactDOM.createRoot(document.getElementById('reactID')).render(React.createElement(ReactComp));
