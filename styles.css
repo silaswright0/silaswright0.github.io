@@ -101,3 +101,17 @@ body {
         width: 90%;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .image-content {
+      order: 2; /* Ensures image is below text */
+    }
+
+    .text-content {
+      order: 1; /* Ensures text is above image */
+    }
+  }
