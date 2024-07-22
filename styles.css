@@ -43,3 +43,61 @@ body {
     padding: 10px 20p;
     margin: 0 20px;
 }
+
+@media (max-width: 768px) {
+    .navigation__link {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .header__title {
+        font-size: 1.5em;
+        padding: 10px 0;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .section__title {
+        font-size: 1.2em;
+    }
+
+    .section__content {
+        font-size: 0.9em;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-section img {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation__link {
+        padding: 8px;
+    }
+
+    .header__title {
+        font-size: 1.2em;
+    }
+
+    .section__content {
+        font-size: 0.8em;
+    }
+
+    .about-section img {
+        width: 90%;
+    }
+}
