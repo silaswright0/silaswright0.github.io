@@ -7,55 +7,75 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header" role="banner">
-        <div class="container">
-            <h1 class="header__title">Silas Wright's Portfolio</h1>
-        </div>
-    </header>
-    <nav class="navigation" role="navigation" aria-label="Main Navigation">
-        <div class="container">
-            <a href="index.html" class="navigation__link">Home</a>
-            <a href="featured.html" class="navigation__link">Featured</a>
-            <a href="projects.html" class="navigation__link">Projects</a>
-            <a href="react.html" class="navigation__link">React</a>
-            <a href="resume.html" class="navigation__link">Resume</a>
-            <a href="contact.html" class="navigation__link">Contact</a>
-        </div>
+    <nav class="nav">
+        <h4>Silas Wright's Portfolio</h4>
+        <a href="index.html">Home</a>
+        <a href="featured.html" class="active">Featured</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <main class="main-content">
-        <section class="section">
-            <div class="container" style="display: flex; flex-wrap: wrap;">
-                <div style="flex: 100%; text-align: center;">
-                    <h1 class="section__title">Play My Games! :)</h1>
-                    <p class="section__content">This page contains links to download some of my more impressive projects. Currently my Pokémon Game and Pool Game are available for download, and I have more projects being finalized soon. Please try them for yourself!</p>
-                </div>
-                <div style="flex: 50%; padding: 20px;">
-                    <h2 class="section__title">My Pokémon Game</h2>
-                    <ul>
-                        <li class="section__content">Collaborated with a team of three to develop an OO program that met specific design requirements using Java</li>
-                        <li class="section__content">Assumed a leadership role within the team, fostering open communication and ensuring effective collaboration to maximize productivity and project success</li>
-                        <li class="section__content">Employed JUnit test cases to rigorously test and debug the project within tight time constraints</li>
-                        <li class="section__content">Responsible for 13 Java class files including the GUI</li>
-                        <li class="section__content"><a href="PokemonGame.zip" download="PokemonGame.zip">Download my game here!</a> Then open the Jar file to play! Note: you must have JRE or JDK installed and configured to run Jar files.</li>
-                    </ul>
-                </div>
-                <div style="flex: 50%; padding: 20px;">
-                    <h2 class="section__title">My Pool Game</h2>
-                    <ul>
-                        <li class="section__content">Developed a pool game to gain full stack development experience</li>
-                        <li class="section__content">Used C, Python, SQL, HTML, CSS, JavaScript with Visual Studio on Windows OS</li>
-                        <li class="section__content">In short, a server I created with Python acts as an interface between Python and C backend and my pool game website</li>
-                        <li class="section__content">I use AJAX to asynchronously communicate with my server</li>
-                        <li class="section__content"><a href="pool.zip" download="pool.zip">Download my game here!</a> Follow instructions in the README usage section to play!</li>
-                    </ul>
-                </div>
-            </div>
+
+    <main class="main_page">
+        <section class="main_dom">
+            <h1>Play My Games! 🎮</h1>
+            <p>
+                Explore my collection of featured projects! Download and try them out. Stay tuned, more exciting projects are coming soon.
+            </p>
+            <hr class="bar">
+            <article>
+                <h2>My Pokémon Game</h2>
+                <p>
+                    <li>
+                        Collaborated with a team of three to develop an object-oriented program in Java 
+                        that met specific design requirements.
+                    </li> 
+                    <li>
+                        Assumed a leadership role, fostering 
+                        teamwork and productivity.
+                    </li>
+                    <li>
+                        Quickly adapted to new tools and technologies.
+                    </li> 
+                    <li>
+                        Utilized JUnit test cases for debugging and developed 
+                        13 Java class files, including the GUI.
+                    </li>
+                </p>
+                <p>
+                    <a href = "https://github.com/silaswright0/myPokemonProject">View project on Gihub</a><br>
+                    <a href="PokemonGame.zip" download="PokemonGame.zip">Download the game here!</a> 
+                    Note: Ensure JRE or JDK is installed to run Jar files.
+                </p>
+            </article>
+            <hr class="bar">
+            <article>
+                <h2>My Pool Game</h2>
+                <p>
+                    <li>
+                        Developed a pool game for full-stack development experience using C, Python, SQL, 
+                        HTML, CSS, and JavaScript.
+                    </li> 
+                    <li>
+                        Built a Python server to interface between the frontend 
+                        and backend, using AJAX for asynchronous communication.
+                    </li>
+                    <li>
+                        Advanced problem-solving and analyitical skills while debugging.
+                    </li> 
+                </p>
+                <p>
+                    <a href = "https://github.com/silaswright0/Pool-Game">View project on Gihub</a><br>
+                    <a href="pool.zip" download="pool.zip">Download the game here!</a> 
+                    Note: follow the README for usage instructions.
+                </p>
+            </article>
         </section>
     </main>
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <p class="footer__copyright">&copy; 2024 Silas Wright. All rights reserved.</p>
-        </div>
+
+    <footer class="footer">
+        &copy; 2025 Silas Wright. Built with passion and creativity. |
+        <a href="contact.html">Contact Me</a>
     </footer>
 </body>
 </html>
