@@ -223,6 +223,9 @@ h1, h4 {
 }
 
 @media (max-width: 768px) {
+    .hide_on_mobile{
+        display: none;
+    }
     /* Navigation Bar */
     .nav {
         display: flex;
