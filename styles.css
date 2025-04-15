@@ -85,6 +85,9 @@ h1, h4 {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
 }
+.Mobile_main_projects {
+    display: none;
+}
 .main_projects {
     display: flex;
     flex-wrap: wrap;
@@ -250,6 +253,10 @@ h1, h4 {
 
     .PC_main_projects {
         display: none;
+    }
+
+    .Mobile_main_projects {
+        display: contents;
     }
 
     /* Navigation Bar */
