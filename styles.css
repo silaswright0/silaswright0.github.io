@@ -242,9 +242,16 @@ h1, h4 {
         background: #001f3f;
         min-height: 50vh;
     }
-    .main_projects {
-        background: #ffffff;
+
+    .img {
+        width: 250px;
+        height: auto;
     }
+
+    .PC_main_projects {
+        display: none;
+    }
+
     /* Navigation Bar */
     .nav {
         display: flex;
@@ -277,61 +284,7 @@ h1, h4 {
         border: 1px solid #001f3f;
     }
 
-    .img {
-        width: 250px;
-        height: auto;
-    }
-
-    .main_page {
-        max-width: 768px;
-        margin: 10px auto;
-        background: #ffffff;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 12px;
-    }
-
-    .colOne {
-        width: 20vw;
-        flex-direction: row;
-        flex: 1;
-        background: #f8fbff;
-        z-index: 3;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main_res {
-        flex: 1;
-        background: #e3f2fd;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     
-    .main_res img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .main_dom{
-        flex: 2;
-        padding: 10px;
-        background: #f8fbff;
-    }
-    
-    .main_dom h1 {
-        font-size: 1.0em;
-        color: #001f3f;
-        margin-bottom: 10px;
-    }
-    
-    .main_dom p {
-        font-size: 0.6em;
-        margin-bottom: 10px;
-    }
     
     /* Footer */
     .footer {
