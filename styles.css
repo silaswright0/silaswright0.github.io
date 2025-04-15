@@ -126,6 +126,15 @@ h1, h4 {
     align-items: center;
 }
 
+.PC_main_res {
+    flex: 1;
+    background: #e3f2fd;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main_res img {
     max-width: 100%;
     height: auto;
@@ -223,7 +232,7 @@ h1, h4 {
 }
 
 @media (max-width: 768px) {
-    .hide_on_mobile{
+    .PC_main_res {
         display: none;
     }
     /* Navigation Bar */
