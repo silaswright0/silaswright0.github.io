@@ -241,6 +241,9 @@ h1, h4 {
     .after_footer {
         background: #001f3f;
     }
+    .main_projects {
+        background: #ffffff;
+    }
     /* Navigation Bar */
     .nav {
         display: flex;
