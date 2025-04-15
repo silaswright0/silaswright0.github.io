@@ -235,6 +235,9 @@ h1, h4 {
     .PC_main_res {
         display: none;
     }
+    .PC_only {
+        display: none;
+    }
     /* Navigation Bar */
     .nav {
         display: flex;
