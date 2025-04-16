@@ -238,9 +238,6 @@ h1, h4 {
 }
 
 @media (max-width: 768px) {
-    .mobile_left {
-        align-items: left;
-    }
     .PC_main_res {
         display: none;
     }
