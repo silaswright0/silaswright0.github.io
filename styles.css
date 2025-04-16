@@ -260,6 +260,7 @@ h1, h4 {
 
     .Mobile_main_projects {
         display: contents;
+        padding: 12px;
     }
 
     .slideshowContainer {
@@ -301,7 +302,6 @@ h1, h4 {
         border: 1px solid #001f3f;
     }
     .main_page {
-        padding: 6px;
         max-width: 768px;
         background: #ffffff;
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
