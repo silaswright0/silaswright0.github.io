@@ -352,6 +352,18 @@ h1, h4 {
         color: #001f3f;
         margin-bottom: 10px;
     }
+
+    .main_dom h2 {
+        font-size: 1.0em;
+        color: #001f3f;
+        margin-bottom: 10px;
+    }
+
+    .main_dom li {
+        font-size: 0.6em;
+        color: #001f3f;
+        margin-bottom: 10px;
+    }
     
     .main_dom p {
         font-size: 0.6em;
