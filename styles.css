@@ -302,13 +302,14 @@ h1, h4 {
         border: 1px solid #001f3f;
     }
     .main_page {
+        margin: 10px;
         max-width: 768px;
         background: #ffffff;
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
     }
     .mobile_main_page {
-        padding: 12px;
+        margin: 20px;
         max-width: 768px;
         background: #ffffff;
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
