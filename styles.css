@@ -273,8 +273,7 @@ h1, h4 {
     /* Navigation Bar */
     .nav {
         display: flex;
-        align-items: left;
-        padding-left: 5px;
+        align-items: center;
         justify-content: space-between;
         background: #001f3f;
         color: white;
@@ -304,7 +303,6 @@ h1, h4 {
     .main_page {
         padding: 12px 12px;
         max-width: 768px;
-        margin: 10px auto;
         background: #ffffff;
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
