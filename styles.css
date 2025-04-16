@@ -233,6 +233,9 @@ h1, h4 {
     position: absolute;
     top: 0;
 }
+.mobile_only {
+    display: none;
+}
 
 @media (max-width: 768px) {
     .PC_main_res {
@@ -261,6 +264,10 @@ h1, h4 {
 
     .slideshowContainer {
         display: none;
+    }
+
+    .mobile_only {
+        display: contents;
     }
 
     /* Navigation Bar */
@@ -295,6 +302,7 @@ h1, h4 {
         border: 1px solid #001f3f;
     }
     .main_page {
+        padding: 12px 12px;
         max-width: 768px;
         margin: 10px auto;
         background: #ffffff;
