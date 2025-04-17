@@ -308,12 +308,15 @@ h1, h4 {
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
     }
-    .mobile_main_page {
-        margin: 20px;
-        max-width: 768px;
-        background: #ffffff;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 12px;
+    .main_page h3 {
+        font-size: 1.0em;
+        color: #001f3f;
+        margin-bottom: 10px;
+    }
+    .main_page p {
+        font-size: 0.6em;
+        color: #001f3f;
+        margin-bottom: 10px;
     }
     .colOne {
         width: 20vw;
