@@ -1,111 +1,153 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silas Wright | Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffffff, #dfe9f3);
+            color: #333;
+        }
 
-<!--Hello, this is the HTML code for Silas' portfolio coded by me: Silas Wright, Page:index-->
-<html>
-    <head>
-        <title>Silas' Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <style>
-            .nav{
-                display: flex;
-                background-color: black;
-            }
-            
-            .nav a{
-                color: white;
-                padding: 14px 20px;
-                text-decoration: none;
-                text-align: center;
-            }
-            
-            .nav a:hover{
-                background-color: gray;
-                color: black;
-            }
-            .main_page{
-                display: flex;
-            }
-            
-            .main_left{
-                flex: 40%;
-                background-color: lightblue;
-                padding: 20px;
-            }
-            
-            .main_right{
-                flex: 60%;
-                background-color: lightsteelblue;
-                padding: 20px;
-            }
-            .p_text{
-                font-family: serif;
-                text-align: center;
-                font-size: 150%;
-            }
-            .h_text{
-                font-family: serif;
-                text-align: center;
-                font-size: 300%;
-            }
-            .center_image{
-                display: block;
-                margin-left: auto;
-                margin-right: auto; 
-            }
-            .nav_title{
-                color: white;
-                margin-left: 30px;
-                margin-right: 900px;
-                margin-top: 16px;
-                margin-bottom: 26px;
-                font-family: serif;
-                font-weight: normal;
-            }
-            
-            .bar{
-                height: 2px;
-                border-width: 0;
-                color: lightblue;
-                background-color: lightblue;
-            }
-        </style>
-    
-    </head>
-    <body style="background-color: lightsteelblue">
-        <div class="nav">
-            <h4 class="nav_title" >Silas' Portfolio</h4>
-            <a href ="index.html">Home</a>
-            <a href ="projects.html">Projects</a>
-            <a href ="resume.html">Resume</a>
-            <a href ="contact.html">Contact</a>
-        </div>
-        
-        <div class="main_page">
-            <div class="main_left">
-                <img class="center_image" src="placeholder-person-square.png" alt="Photo will be added soon" style="width:384px;height:384px;">
-            </div>   
-            <div class="main_right">
-                <h1 class="h_text">Who Am I?</h1>
-                <p class="p_text">My name is Silas Wright. I am a 18 year old student in my second year of an honors co-op computer science undergraduate degree at the University of Guelph. </p>
-                <hr class="bar">
-                <p class="p_text">I am responsible and hardworking and enjoy challenging myself while developing new skills. Additionally, my intelligence and problem solving capabilities have resulted in success in software engineering.</p>
-                <hr class="bar">
-                <p class = "p_text">I have about 4 years of coding experience from both school and personal projects. In that time I have learned python, java, C/C++, and HTML. I thoroughly enjoy coding and continue to expand my skills all the time. Take a look at some of my projects <a href="projects.html">here</a>.</p>
-                <hr class="bar">
-            </div>
-            
+        a {
+            text-decoration: none;
+        }
+
+        h1, h4 {
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        .nav {
+            display: flex;
+            align-items: center;
+            background: #0044cc;
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav h4 {
+            font-size: 1.5em;
+            margin-right: auto;
+            font-weight: bold;
+        }
+
+        .nav a {
+            color: white;
+            padding: 10px 15px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .nav a:hover {
+            background: white;
+            color: #0044cc;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        .main_page {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .main_left {
+            flex: 1;
+            background: #f0f8ff;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main_left img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .main_right {
+            flex: 2;
+            padding: 30px;
+        }
+
+        .main_right h1 {
+            font-size: 2.5em;
+            color: #0044cc;
+            margin-bottom: 20px;
+        }
+
+        .main_right p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .main_right a {
+            color: #0044cc;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .bar {
+            height: 3px;
+            background: #0044cc;
+            border: none;
+            margin: 20px 0;
+        }
+
+        /* Footer (Optional) */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #0044cc;
+            color: white;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="nav">
+        <h4>Silas Wright | Portfolio</h4>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="ai.html">AI</a>
+    </header>
+
+    <main class="main_page">
+        <div class="main_left">
+            <img src="images/silaswebprofile.jpg" alt="Picture of Silas">
         </div>
         <div class="main_right">
-            <!-- not sure if i want to add this 
-            <p class = "p_text">For any curious about my education on a course level. I have completed two full time terms of my degree, and as such have already taken courses such as CIS*1300 and CIS*2500 providing me with a solid understanding of C programming. I have also already completed discrete structures *1910 and *2910 which taught me important computer science theory. Furthermore, the high school courses ..,.., and .. provided an impressive teaching of java and python. In my future academic career, I plan to take fundamental courses such as CIS *2430, *2520, *2750, and *3670 which will build upon my general foundation of software programming. I also plan to take courses to perfect user interfaces (CIS*2170), learn cyber security (CIS*4510), study AI (CIS*3700), perfect game programming (CIS*4820), learn applications in data management (STAT*2040, CIS*3750, CIS*3120, CIS*3490), learn how to program hardware (CIS*2030), and many more. In addition, I am minoring in biology and am interested in applications of my degree in biotechnology. Lastly, I taught myself C++ and HTML <i>(which I used to code this website)</i>, and am planning to learn javascript next.</p>
-            <hr class ="bar">
-            -->
+            <h1>Who Am I?</h1>
+            <p>My name is Silas Wright. I am an 18-year-old student in my second year of an honors co-op computer science undergraduate degree at the University of Guelph.</p>
+            <hr class="bar">
+            <p>I am responsible, hardworking, and enjoy challenging myself while developing new skills. My intelligence and problem-solving capabilities have resulted in success in software engineering.</p>
+            <hr class="bar">
+            <p>I have about 4 years of coding experience from both school and personal projects. In that time, I have learned Python, Java, C/C++, and HTML. I thoroughly enjoy coding and continue to expand my skills all the time. Take a look at some of my projects <a href="projects.html">here</a>.</p>
         </div>
-    </body>
+    </main>
+
+    <footer class="footer">
+        &copy; 2025 Silas Wright. All rights reserved. | <a href="contact.html">Contact Me</a>
+    </footer>
+</body>
 </html>
