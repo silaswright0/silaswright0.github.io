@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silas Wright - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Silas Wright's Portfolio showcasing projects, resume, and contact information.">
+</head>
+<body>
+    <nav class="nav">
+        <h4>Silas Wright's Portfolio</h4>
+        <a href="index.html" class="navigation__link">Home</a>
+        <a href="featured.html" class="navigation__link">Featured</a>
+        <a href="projects.html" class="navigation__link">Projects</a>
+        <!--<a href="react.html" class="navigation__link">React</a>-->
+        <a href="resume.html" class="navigation__link">Resume</a>
+        <a href="contact.html" class="navigation__link">Contact</a>
+    </nav>
+    <main class="main-content">
+        <div class="container project-columns">
+            <section class="project-column">
+                <h2 class="section__title">School Projects</h2>
+                <article class="project">
+                    <div class="project__content">
+                        <h3 class="project__title">Multithreaded programming</h3>
+                        <p class="project__description">For my Operating Systems class I was responsible for building a multithreaded program that uses mutex locks to ensure proper synchronization . In this program I create a new thread each time the user wants to input a new file, in each thread I compare file contents to a dictionary to check for misspells and keep track of these spelling errors with dynamically allocated memory. After the user is finished I output details about the spelling in the files. This assignment demonstrates my ability to created multithreaded programs and handle critical sections of code with tools like mutex locks.</p>
+                        <img src="osoutput.png" alt="Screenshot of Output" class="responsive-image">
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project__content">
+                        <h3 class="project__title">Pool Game</h3>
+                        <p class="project__description">I independently developed a pool game to gain full-stack development experience. I created a server program with Python that acts as an asynchronous interface between C and Python backend and my Pool Game website which I created with HTML, CSS, and Javascript.  See the source code in <a href = "https://github.com/silaswright0/Pool-Game">GitHub here</a>. Explore the game further on the <a href="featured.html">featured page</a>.</p>
+                        <div class="slideshow-container">
+                            <div class="mySlidesPool">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="poolpic1.png" alt="Pool Pic 1" class="project__image">
+                            </div>
+                            <div class="mySlidesPool">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="poolpic2.png" alt="Pool Pic 2" class="project__image">
+                            </div>
+                            <div class="mySlidesPool">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="poolpic3.png" alt="Pool Pic 3" class="project__image">
+                            </div>
+                            <a class="prev" onclick="poolPlusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="poolPlusSlides(1)">&#10095;</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <img src="2430.png" alt="Screenshot of GUI" class="responsive-image">
+                    <div class="project__content">
+                        <h3 class="project__title">Mancala Game</h3>
+                        <p class="project__description">This Java program supplies a GUI and class hierarchy with the ability to play the popular board game Mancala with different rule sets. The code also provides the user with the ability to save and load game states, as well as access information about a user's personal profile. I used JUnit testing and PMD error checking to ensure professional code quality. This assignment was for my CIS*2430 class which teaches Java and Object Oriented Programming.</p>
+                    </div>
+                </article>
+                <article class="project">
+                    <img src="2520.png" alt="Screenshot of part of program for hash table" class="responsive-image">
+                    <div class="project__content">
+                        <h3 class="project__title">Data Structures Implementations</h3>
+                        <p class="project__description">For my CIS*2520 course, I was responsible for providing abstract implementations of several data structures including linked lists, hash tables, and tries. Each implementation required methods for insertion, query, deletion, and as such detailed knowledge of the data structure. Each implementation was thoroughly tested with various sizes and styles of data highlighting the strengths and weaknesses of each data structure.</p>
+                    </div>
+                </article>
+                <article class="project">
+                    <img src="1300-Olympics.png" alt="Screenshot of part of program for hash table" class="responsive-image">
+                    <div class="project__content">
+                        <h3 class="project__title">Olympics tracker</h3>
+                        <p class="project__description">This project was my third assignment in my CIS*1300 course which introduces the C programming language and procedural programming. The project read data regarding the Olympic games from a file then provided various methods to access and format the data. For example the project could graph countries standings based on a medal or simply return the number of golds a country has. The project demonstrates a solid understanding of procedural programming and the C language.</p>
+                    </div>
+                </article>
+                <article class="project">
+                    <img src="2500-StringMan.png" alt="Screenshot of part of program for hash table" class="responsive-image">
+                    <div class="project__content">
+                        <h3 class="project__title">String manipulator</h3>
+                        <p class="project__description">For this assignment I used C to develop a program that provides a user with various methods to manipulate strings read in from a data file. This assignment was part of my CIS*2500 course which advanced my knowledge of the C language and procedural programming.</p>
+                    </div>
+                </article>
+                <article class="project">
+                    <img src="2500-Emp.png" alt="Screenshot of part of program for hash table" class="responsive-image">
+                    <div class="project__content">
+                        <h3 class="project__title">Employee management</h3>
+                        <p class="project__description">This program was my third assignment in my CIS*2500 course. The code provides a user with a multitude of functions to assist with various tasks related to employee management.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="project-column">
+                <h2 class="section__title">Personal Projects</h2>
+                <article class="project">
+                    <div class="project__content">
+                        <h3 class="project__title">Automated Machine Learning Webapp</h3>
+                        <p class="project__description">Here I wrote a program in Python that provides the user with tools for automated data profiling as well as ML model training and predictions. I also demonstrate my skills with my favourite ML Python libraries PyCaret, Pandas Profiling, and Streamlit. View the source code <a href="https://github.com/silaswright0/Automated-ML-Webapp">here</a></p>
+                        <img src="mlwebapp.png" alt="Screenshot of Webpage" class="responsive-image">
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project__content">
+                        <h3 class="project__title">Discord Music Bot</h3>
+                        <p class="project__description">In this project I created a python script that allows a user to play music while on a discord call. My goals were to expand my abilities in python while creating a script the public can use. Follow the instructions in the readme on github to set the bot up on your own computer. View the source code <a href="https://github.com/silaswright0/discordmusicbot">here</a></p>
+                        <img src="musicbot.png" alt="Screenshot of Discord Commands" class="responsive-image">
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project__content">
+                        <h3 class="project__title">Pokemon Game</h3>
+                        <p class="project__description">This Java program is designed to simulate a DS style Pokemon game. I collaborated with two friends to develop this program using Waterfall methodology. I was primarily responsible for the abstract Pokemon class and its subclasses as well as the GUI. During this project, I used problem-solving skills to utilize OO concepts I had no previous experience with such as Java's Action Listener class. See the source code in <a href="https://github.com/silaswright0/myPokemonProject">GitHub here</a>. Download the game <a href="PokemonGame.zip" download="PokemonGame.zip">here!</a></p>
+                            <div class="slideshow-container">
+                                <div class="mySlides">
+                                    <div class="numbertext">1 / 3</div>
+                                    <img class="center_image" src="pokemonmenupic.png" alt="Screenshot of GUI menu" style="width:312px;height:312px;">
+                                    <div class="text">Screenshot of GUI menu</div>
+                                </div>
+                                
+                                <div class="mySlides">
+                                    <div class="numbertext">2 / 3</div>
+                                    <img class="center_image" src="pokemongamepic.png" alt="Screenshot of GUI game enviroment" style="width:312px;height:312px;">
+                                    <div class="text">Screenshot of GUI game enviroment</div>
+                                </div>
+                                
+                                <div class="mySlides">
+                                    <div class="numbertext">3 / 3</div>
+                                    <img class="center_image" src="pokemonbattlepic.png" alt="Screenshot of GUI battle enviroment" style="width:312px;height:312px;">
+                                    <div class="text">Screenshot of GUI battle enviroment</div>
+                                </div>
+                                
+                                <!-- buttons below -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                
+                            </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project__content">
+                        <h3 class="project__title">Unreal Engine App</h3>
+                        <p class="project__description">I am currently employed as a software developer constructing an app for a client using Unreal Engine. I worked with my client to carefully design a modular project structure using agile methodology to allow for seamless integration of new features. My client sets clear project requirements that I satisfy within specified time constraints. I maintained proactive communication with the client to deliver project components and actively engaged in discussions to identify and implement improvements. During the project, I have gained incredibly valuable experience with professional software development.</p>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project__content">
+                        <h3 class="project__title">Personal Website In HTML</h3>
+                        <p class="project__description">I designed this website to display my front end development abilities, as well as abilities in other powerful languages by showcasing some of my other projects. Moreover, teaching myself how to create this website is a demonstration of my hard working nature, initiative, and problem solving capabilities. The website uses HTML, CSS, and Javascript to create a visually appealing, interactive website. I also employed concepts I learned in my UI design class such as the principles of design and Gestalt principles. See the source code in <a href = "https://github.com/silaswright0/silaswright0.github.io">GitHub here</a></p>
+                    </div>
+                </article>
+                <article class="project">
+                    <img src="library.png" alt="Screenshot of GUI" class="responsive-image">
+                    <div class="project__content">
+                        <h3 class="project__title">Library Project</h3>
+                        <p class="project__description">This Java project represents a online library implementation. I worked independently to create a program which reads data from a file then uses an interactive UI to grant a user the ability to add and borrow books. In addition, the program provides different search methods so the user can choose the most optimal one for their specific search. See the source code in <a href ="https://github.com/silaswright0/Library-Project">GitHub here</a></p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p class="footer__copyright">&copy; 2024 Silas Wright. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 1;
+        let poolSlideIndex =1;
+        showSlides(slideIndex);
+        poolShowSlides(poolSlideIndex);
+        // next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex +=n);
+        }
+        function poolPlusSlides(n) {
+            poolShowSlides(poolSlideIndex +=n);
+        }
+        //thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+            poolShowSlides(poolSlideIndex = n)
+        }
+        function poolShowSlides(n){
+            let i;
+            let slides = document.getElementsByClassName("mySlidesPool");
+            if (n > slides.length) {poolSlideIndex = 1;}
+            if (n < 1) {poolSlideIndex = slides.length;}
+            for (i=0;i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[poolSlideIndex-1].style.display = "block";
+        }
+        function showSlides(n){
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1;}
+            if (n < 1) {slideIndex = slides.length;}
+            for (i=0;i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+        </script>
+</body>
+<footer class="footer">
+    &copy; 2025 Silas Wright. Built with passion and creativity. | <a href="contact.html">Contact Me</a>
+</footer>
+</html>
