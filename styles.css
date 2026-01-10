@@ -388,6 +388,7 @@ h1, h4 {
         color: white;
         font-size: 0.6em;
         margin-top: 10px;
+        align-self: self-end;
     }
 
     .footer a {
