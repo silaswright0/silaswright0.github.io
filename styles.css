@@ -251,7 +251,7 @@ h1, h4 {
 
     .homepage_img{
         height: auto;
-        width: 20vw;
+        max-width: 64px;
     }
 
     .img {
