@@ -250,8 +250,8 @@ h1, h4 {
     }
 
     .homepage_img{
-        height: 20vh;
-        width: auto;
+        height: auto;
+        width: 20vw;
     }
 
     .img {
